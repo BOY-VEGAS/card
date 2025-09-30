@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Card Grid</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			min-height: 100vh;
+			background: linear-gradient(135deg, #f8e1ff 0%, #ffe5e5 50%, #e0f7fa 100%), url('https://www.transparenttextures.com/patterns/cream-dust.png');
+			background-size: cover;
+			background-repeat: repeat;
+		}
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 24px;
+			max-width: 1000px;
+			margin: 40px auto;
+			padding: 24px;
+		}
+		.card {
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 16px;
+		}
+		.card img {
+			width: 100%;
+			height: 160px;
+			object-fit: cover;
+			border-radius: 8px;
+			margin-bottom: 12px;
+		}
+		.card-title {
+			font-size: 1.1rem;
+			font-weight: bold;
+			margin-bottom: 8px;
+		}
+		.card-desc {
+			font-size: 0.95rem;
+			color: #555;
+		}
+		@media (max-width: 700px) {
+			.grid {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="grid">
+		<div class="card">
+			<img src="images/la mer.jpg" alt="La Mer Crème de la Mer">
+			<div class="card-title">La Mer Crème de la Mer</div>
+			<div class="card-desc">$380 (100ml)<br>Legendary for its deep hydration and skin renewal. Leaves skin fresh, radiant, and soft for hours.</div>
+		</div>
+		<div class="card">
+			<img src="images/sisley.jpg" alt="Sisley Paris Sisleÿa L'Integral Anti-Age">
+			<div class="card-title">Sisley Paris Sisleÿa L'Integral Anti-Age</div>
+			<div class="card-desc">$565 (50ml)<br>Luxurious anti-aging cream, visibly firms and smooths. Long-lasting youthful glow and freshness.</div>
+		</div>
+		<div class="card">
+			<img src="images/cle de peaue.jpg" alt="Clé de Peau Beauté La Crème">
+			<div class="card-title">Clé de Peau Beauté La Crème</div>
+			<div class="card-desc">$550 (30ml)<br>Ultra-rich, deeply nourishing. Delivers lasting moisture and luminous skin all day.</div>
+		</div>
+		<div class="card">
+			<img src="images/augustinus badr.jpg" alt="Augustinus Bader The Cream">
+			<div class="card-title">Augustinus Bader The Cream</div>
+			<div class="card-desc">$290 (50ml)<br>Science-driven hydration, supports skin renewal. Keeps skin fresh and plump for hours.</div>
+		</div>
+		<div class="card">
+			<img src="images/guerlian.jpg" alt="Guerlain Orchidée Impériale Cream">
+			<div class="card-title">Guerlain Orchidée Impériale Cream</div>
+			<div class="card-desc">$455 (50ml)<br>Orchid extract for lasting youthfulness. Smooth, radiant, and fresh skin all day.</div>
+		</div>
+		<div class="card">
+			<img src="images/valmont.jpg" alt="Valmont Prime Renewing Pack">
+			<div class="card-title">Valmont Prime Renewing Pack</div>
+			<div class="card-desc">$340 (50ml)<br>Swiss luxury, instant freshness and glow. Revives tired skin and keeps it hydrated for hours.</div>
+		</div>
+	</div>
+</body>
+</html>
